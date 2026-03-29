@@ -24,6 +24,7 @@ cd client
 npm i
 cd ../DatabaseSetup
 npm i
+```
 
 ### Bước 2: Setup database
 
@@ -31,8 +32,9 @@ npm i
 cd DatabaseSetup
 node index
 (Sau khi chạy xong nhấn Ctrl + C)
+```
 
 ### Bước 3: Chạy project
-
 ```bash
 npm run dev
+```
