@@ -1,0 +1,58 @@
+@baseURL = http://localhost:8000/api
+
+# Tài Khoản
+
+# @name Login
+POST {{baseURL}}/account/login
+Content-Type: application/json
+
+{
+    "username":"spadmin",
+    "password":"123456"
+}
+
+###
+
+# @name Logout
+GET {{baseURL}}/account/logout
+
+###
+
+# @name Authentication
+GET {{baseURL}}/account/authenticated
+
+###
+
+# @name Sendmail
+POST {{baseURL}}/account/sendMail
+Content-Type: application/json
+
+{
+    "username":"tranquocliem99",
+    "email":"tranquocliem99@gmail.com",
+    "role":"candidate"
+}
+
+###
+
+# @name Register
+POST {{baseURL}}/account/register
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyYW5xdW9jbGllbTk5IiwiZW1haWwiOiJ0cmFucXVvY2xpZW05OUBnbWFpbC5jb20iLCJyb2xlIjoiY2FuZGlkYXRlIiwiaWF0IjoxNzY4MjcwNTAxLCJleHAiOjE3NjgyNzExMDF9.1FqoezBn5ejRKFKI-1Y7oBfq4IVstuTyschRqMOSbrM",
+    "password":"123456",
+    "confirmPass":"123456"
+}
+
+###
+
+# Thành phố
+
+# @name CreateCity
+POST {{baseURL}}/city/createCity
+Content-Type: application/json
+
+{
+    "name":"Lạng Sơn"
+}

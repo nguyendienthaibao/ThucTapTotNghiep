@@ -1,0 +1,83 @@
+/* ================= HEADER FULL SCREEN ================= */
+.header-page {
+  position: relative;
+  min-height: 100vh;                 /* FULL MÀN HÌNH */
+  width: 100%;
+
+  display: flex;
+  align-items: center;               /* Căn giữa dọc */
+  justify-content: center;           /* Căn giữa ngang */
+
+  padding-top: 80px;                 /* Tránh navbar che */
+
+  animation: animation ease-in-out 1s;
+  transition: 0.5s;
+  top: 0;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("/bg-tuyendung.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* FADE MƯỢT XUỐNG SECTION DƯỚI */
+.header-page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(248,249,250,0),
+    rgba(248,249,250,1)
+  );
+}
+
+/* ================= AVATAR ANIMATION ================= */
+.masthead-avatar {
+  opacity: 0;
+  animation: avatar 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes avatar {
+  0% {
+    opacity: 0;
+    transform: translate(20%, 20%) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* ================= HEADER SLIDE DOWN ================= */
+@keyframes animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-550px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+  .header-page {
+    min-height: 85vh;
+    padding-top: 100px;
+  }
+}
+
+.header-page p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,77 @@
+/* ================= CARD CONTAINER ================= */
+.cv-item .portfolio-item {
+  border-radius: 12px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-item .portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* ================= CARD BODY ================= */
+.card-MN {
+  background-color: #4e6a86; /* sáng hơn 1 chút */
+}
+
+/* ================= TEXT SUMMARY ================= */
+.cvMN-item-sumary {
+  font-weight: 600;
+  color: #e4e9ee;
+}
+
+.card-MN .cvMN-item-sumary .cv-title {
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+.cvMN-item-sumary .cv-title:hover {
+  color: #d9f2eb !important; /* sáng nhẹ – KHÔNG lệch tone */
+}
+
+/* ================= SALARY ================= */
+.cvMN-salary {
+  font-weight: 600;
+}
+
+.cvMN-salary span a {
+  color: #e4e9ee;
+}
+
+.cvMN-salary span a:hover {
+  color: #ffffff;
+}
+
+/* ================= IMAGE (Gallery / Logo) ================= */
+.cv-img img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ImageGallery wrapper */
+.img img {
+  height: 140px !important;
+  object-fit: contain !important;
+}
+
+/* ================= MENU ICON ================= */
+.menu-recruitment {
+  margin: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  font-size: 20px;
+}
+
+.menu-recruitment:hover {
+  cursor: pointer;
+  color: #ffffff;
+}

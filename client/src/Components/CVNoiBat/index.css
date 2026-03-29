@@ -1,0 +1,87 @@
+/* ================= SECTION BACKGROUND (MATCH HEADER) ================= */
+.bg-nb {
+  background: linear-gradient(
+    to bottom,
+    #f8f9fa 0%,
+    #f4f6f8 100%
+  );
+  padding: 70px 0 100px;     /* match header */
+  box-shadow: 0 -30px 60px rgba(0,0,0,0.04);
+}
+
+
+/* ================= CARD CONTAINER ================= */
+.cvNB-item .portfolio-item {
+  border-radius: 12px 12px 0 0 !important;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cvNB-item .portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* ================= CARD BODY ================= */
+.card-NB {
+  background-color: #425b76;
+}
+
+/* ================= TEXT SUMMARY ================= */
+.cvNB-item-sumary {
+  font-weight: 600;
+  color: #e4e9ee;
+}
+
+.cvNB-item-sumary .cvNB-title {
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.cvNB-item-sumary .cvNB-title:hover {
+  color: #f1f5f9 !important;
+}
+
+/* ================= SALARY ================= */
+.cvNB-salary {
+  font-weight: 600;
+}
+
+.cvNB-salary span a {
+  color: #e4e9ee;
+}
+
+.cvNB-salary span a:hover {
+  color: #ffffff;
+}
+
+/* ================= IMAGE ================= */
+.cvNB-img img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover; /* ĐẸP HƠN fill */
+}
+
+/* ================= MENU ICON ================= */
+.menu-recruitment {
+  margin: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  z-index: 999;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-recruitment:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* ================= SMALL IMAGE ================= */
+.img img {
+  height: 140px !important;
+  object-fit: contain !important;
+}
