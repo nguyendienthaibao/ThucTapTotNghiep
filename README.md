@@ -31,10 +31,12 @@ npm i
 ```bash
 cd DatabaseSetup
 node index
-(Sau khi chạy xong nhấn Ctrl + C)
 ```
+(Sau khi chạy xong nhấn Ctrl + C)
 
 ### Bước 3: Chạy project
+
 ```bash
+cd ..
 npm run dev
 ```
