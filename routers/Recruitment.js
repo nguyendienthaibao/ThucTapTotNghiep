@@ -399,7 +399,7 @@ recruitmentRouter.get("/getFavouriteRecruitment", (req, res) => {
       },
       { $match: { status: true } },
       {
-        $sort: { favourite: -1, createdAt: -1 },
+        $sort: { salary: -1, createdAt: -1 },
       },
       { $limit: 6 },
     ],
