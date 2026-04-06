@@ -28,8 +28,8 @@ POST {{baseURL}}/account/sendMail
 Content-Type: application/json
 
 {
-    "username":"tranquocliem99",
-    "email":"tranquocliem99@gmail.com",
+    "username":"bao123",
+    "email":"nguynbao513@gmail.com",
     "role":"candidate"
 }
 
